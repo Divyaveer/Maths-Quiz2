@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Maths Quiz Game!!</title>
+    <link rel="stylesheet" href="quiz_game.css">
+</head>
+<body>
+    <div class="container">
+        <center>
+            <div class="header">
+                <h2>The Maths Quiz Game!</h2>
+                <h3 id="player_question"></h3>
+                <h3 id="player_answer"></h3>
+            </div>
+            <div id="output" class="col-lg-6"></div>
+            <br>
+            <div class="login_div1">
+                <label>Enter Number1</label>
+                <input type="text" id="number1_input" class="form-control" placeholder="Number1">
+            </div>
+            <br>
+            <div class="login_div1">
+                <label>Enter Number2</label>
+                <input type="text" id="number2_input" class="form-control" placeholder="Number2">
+            </div>
+            <br>
+            <button class="btn btn-success" onclick="send();" style="width: 30%;">Send</button>
+        </center>
+    </div>
+
+    <div class="scoreBoard">
+        <h4 id="player1_name" style="z-index: 10; width: 200px;"><span id="player1_score"></span></h4>
+        <h4 id="player2_name" style="z-index: 10; width: 200px;"><span id="player2_score"></span></h4>
+    </div>
+</body>
+</html>
